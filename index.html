@@ -1,9 +1,56 @@
-<h1>CSS Layout Debugger Bookmarklet</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="CSS Debugging Tools for your daily debuging and problem solving.">
+    <meta name="author" content="@MohammedAlaa">
 
-<p>A small pieces of art <a href="https://gist.github.com/addyosmani/fd3999ea7fce242756b1" target="_blank">one-liner code</a> that <a href="http://addyosmani.com/blog/" target="_blank">Addy Osmani</a> shared a few days ago that can be used to debug your CSS layers.</p>
+    <title>CSS Debugging Tools</title>
 
-<p>Now we wanted to make it a Bookmarklet so it's easier to use instead of just pasting it in the console.</p>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
 
-<p class="important">
-Drag the <a href="javascript:(function(){[].forEach.call(document.querySelectorAll("*"),function(a){a.style.outline="1px solid #"+(~~(Math.random()*(1<<24))).toString(16)})})();">CSS Layout Debugger Bookmarklet</a> to your bookmarks bar!
-</p>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="bs-docs-header" id="content">
+      <div class="container">
+        <h1>CSS</h1>
+        <p>CSS Debugging Tools collected from the entire Web!</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8" role="main">
+          <h1 id="CSSLayoutDebugger" class="page-header">CSS Layout Debugger Bookmarklet</h1>
+
+          <p>A small pieces of art <a href="https://gist.github.com/addyosmani/fd3999ea7fce242756b1" target="_blank">one-liner code</a> that <a href="http://addyosmani.com/blog/" target="_blank">Addy Osmani</a> shared a few days ago that can be used to debug your CSS layers.</p>
+
+          <p>Now we wanted to make it a Bookmarklet so it's easier to use instead of just pasting it in the console.</p>
+
+          <div class="bs-example">
+            <p class="bs-example-title">Drag the following button to your bookmarks bar!</p>
+            <p>
+              <a class="btn btn-primary btn-lg" href="javascript:(function(){[].forEach.call(document.querySelectorAll("*"),function(a){a.style.outline="1px solid #"+(~~(Math.random()*(1<<24))).toString(16)})})();">CSS Layout Debugger</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="nav-sidebar hidden-print hidden-xs hidden-sm affix-top">
+            <ul class="nav sidenav">
+              <li><a href="#download">Layout Debugger Bookmarklet</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
